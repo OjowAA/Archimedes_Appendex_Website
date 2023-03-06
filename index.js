@@ -10,11 +10,12 @@ var engine = Engine.create();
 
 // create a renderer
 var render = Render.create({
-    element: document.getElementById("simulationFrame"),
+    element: document.getElementById("matterFrame1"),
     engine: engine,
     options: {
-      width: 600,
-      height: 600,
+      width: window.innerWidth,
+      height: window.innerHeight,
+      background: "#dedede",
       showAngleIndicator: false,
       wireframes: false
     }
