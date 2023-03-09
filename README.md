@@ -5,3 +5,6 @@ This project is still a work in progress and is subject to change. [Website Link
 
 *dont froget to cite sources -->*
 - matter-js
+- google fonts/icons
+- https://www.pinterest.com/pin/goldberg-diagram--696017317390461077/
+- 

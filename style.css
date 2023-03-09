@@ -7,8 +7,10 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 /*   font-family: 'Tilt Warp', cursive; */
   margin: 0px;
+/*   height: 200vh; */
   font-size: 23px;
   color: #4d4d4d;
+  overflow-x: hidden;
 }
 
 /* background demo frame */
@@ -16,6 +18,7 @@ body{
   position: absolute;
   width: 100vw;
   height: 100vh;
+  box-shadow: 0px 0px 0.25cm 0cm #6b6b6b;
   z-index: -1;
 }
 
@@ -27,16 +30,19 @@ body{
   line-height: 5cm;
   padding-top: 1cm;
   width: 100vw;
+  max-width: 1000px;
+  margin: auto;
   height: 100vh;
   box-sizing: border-box;
 /*   background-color: #dedede; */
-  box-shadow: 0px 0px 0.25cm 0cm #6b6b6b;
-  margin-bottom: 1.5cm
+/*   margin-bottom: 1.5cm */
 }
 
 .column {
   float: left;
   box-sizing: border-box;
+/*   overflow-y: scroll; */
+/*   height: calc(100vh-80px); */
 }
 
 .row {
@@ -53,7 +59,7 @@ body{
 }
 
 .elevatedButton{
-  box-shadow: 2px 2px 5px 0px #6b6b6b;
+  box-shadow: 2px 2px 3px 0px #808080;
   background-color: #ebebeb;
   border: none;
   color: #694f92;
@@ -66,7 +72,7 @@ body{
 }
 
 .elevatedButton:hover{
-  box-shadow: 2px 2px 5px 0px #6b6b6b;
+  box-shadow: 0px 0px 3px 0px #808080;
   color: #ebebeb;
   background-color: #694f92;
 }
@@ -80,8 +86,6 @@ body{
 
 .sideBar{
   padding-left: 30px;
-  position: sticky;
-  top: 0;
 }
 
 .sideBar li{
@@ -121,4 +125,60 @@ main h2{
 main p{
   text-align: left;
   text-indent: 2cm;
+  padding-bottom: 1cm;
+}
+
+.cntrtxtbx{
+  display: inline-block;
+  text-align: center;
+  line-height: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.titleBar{
+  z-index: 2;
+  position: sticky;
+  width: 100vw;
+  height: 80px;
+  background-color: #424242;
+  margin-bottom: 45px;
+  font-family: 'Nabla', cursive;
+  user-select: none;
+  font-size: 0.7cm;
+  box-shadow: 0px 0px 0.25cm 0cm #6b6b6b;
+  top: 0;
+}
+
+.footerBar{
+  z-index: 2;
+  color: #694f92;
+  width: 100vw;
+  height: 50px;
+  background-color: #e6e6e6;
+/*   font-family: 'Nabla', cursive; */
+  font-family: 'Tilt Warp', cursive;
+  user-select: none;
+  font-size: 0.7cm;
+/*   box-shadow: 0px 0px 0.25cm 0cm #6b6b6b; */
+}
+
+.footxtbx{
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.active{
+  color: #694f92;
 }
