@@ -17,12 +17,11 @@ Example.mixed = function() {
 
     // create renderer
     var render = Render.create({
-        element: document.body,
+        element: document.getElementById("matterFrame2"),
         engine: engine,
         options: {
-          width: window.innerWidth,
-          height: window.innerHeight,
-          background: "#dedede",
+          width: 700,
+          height: 500,
           showAngleIndicator: false,
           wireframes: false
         }
